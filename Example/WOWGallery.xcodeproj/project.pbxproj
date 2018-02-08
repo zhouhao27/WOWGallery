@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3859EC26202C4346004DF233 /* FromAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859EC21202C4346004DF233 /* FromAlbumViewController.swift */; };
+		3859EC27202C4346004DF233 /* ImageRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859EC22202C4346004DF233 /* ImageRequester.swift */; };
+		3859EC28202C4346004DF233 /* InternetImageRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859EC23202C4346004DF233 /* InternetImageRequester.swift */; };
+		3859EC29202C4346004DF233 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859EC24202C4346004DF233 /* MainViewController.swift */; };
+		3859EC2A202C4346004DF233 /* PhotoAlbumRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859EC25202C4346004DF233 /* PhotoAlbumRequester.swift */; };
+		3859EC2D202C4354004DF233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3859EC2B202C4354004DF233 /* LaunchScreen.storyboard */; };
 		3E33D7D1150B333C70ABE398 /* Pods_WOWGallery_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95EB344401BF12B59A2FB08 /* Pods_WOWGallery_Tests.framework */; };
 		40D498A44788B788FB6CC8CB /* Pods_WOWGallery_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A7981321F5C7542D7E60B6 /* Pods_WOWGallery_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,23 +34,27 @@
 /* Begin PBXFileReference section */
 		046F50E206DBD118C07118CB /* Pods-WOWGallery_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOWGallery_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOWGallery_Tests/Pods-WOWGallery_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0809A2B617AE22BF28D3781D /* Pods-WOWGallery_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOWGallery_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOWGallery_Tests/Pods-WOWGallery_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0AF09E9B8EDA7CE665FAF650 /* WOWGallery.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WOWGallery.podspec; path = ../WOWGallery.podspec; sourceTree = "<group>"; };
-		162B995A0BE30C3D6B5B9EB1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0AF09E9B8EDA7CE665FAF650 /* WOWGallery.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WOWGallery.podspec; path = ../WOWGallery.podspec; sourceTree = "<group>"; };
+		162B995A0BE30C3D6B5B9EB1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		21A7981321F5C7542D7E60B6 /* Pods_WOWGallery_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOWGallery_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3859EC21202C4346004DF233 /* FromAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromAlbumViewController.swift; sourceTree = "<group>"; };
+		3859EC22202C4346004DF233 /* ImageRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRequester.swift; sourceTree = "<group>"; };
+		3859EC23202C4346004DF233 /* InternetImageRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetImageRequester.swift; sourceTree = "<group>"; };
+		3859EC24202C4346004DF233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3859EC25202C4346004DF233 /* PhotoAlbumRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumRequester.swift; sourceTree = "<group>"; };
+		3859EC2C202C4354004DF233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* WOWGallery_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOWGallery_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* WOWGallery_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOWGallery_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7D8B41DA7600015219E8C8C5 /* Pods-WOWGallery_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOWGallery_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WOWGallery_Example/Pods-WOWGallery_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		916DAC76CEA2855ECC0C2167 /* Pods-WOWGallery_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOWGallery_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOWGallery_Example/Pods-WOWGallery_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B95EB344401BF12B59A2FB08 /* Pods_WOWGallery_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOWGallery_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD3F45555E8358737BA65841 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BD3F45555E8358737BA65841 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +121,15 @@
 		607FACD21AFB9204008FA782 /* Example for WOWGallery */ = {
 			isa = PBXGroup;
 			children = (
+				3859EC2B202C4354004DF233 /* LaunchScreen.storyboard */,
+				3859EC21202C4346004DF233 /* FromAlbumViewController.swift */,
+				3859EC22202C4346004DF233 /* ImageRequester.swift */,
+				3859EC23202C4346004DF233 /* InternetImageRequester.swift */,
+				3859EC24202C4346004DF233 /* MainViewController.swift */,
+				3859EC25202C4346004DF233 /* PhotoAlbumRequester.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for WOWGallery";
@@ -248,8 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3859EC2D202C4354004DF233 /* LaunchScreen.storyboard in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,8 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				3859EC27202C4346004DF233 /* ImageRequester.swift in Sources */,
+				3859EC26202C4346004DF233 /* FromAlbumViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				3859EC28202C4346004DF233 /* InternetImageRequester.swift in Sources */,
+				3859EC29202C4346004DF233 /* MainViewController.swift in Sources */,
+				3859EC2A202C4346004DF233 /* PhotoAlbumRequester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,20 +401,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3859EC2B202C4354004DF233 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3859EC2C202C4354004DF233 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				607FACDA1AFB9204008FA782 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -454,6 +470,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -499,6 +516,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -514,7 +532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -529,7 +547,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -550,7 +568,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -567,7 +585,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
