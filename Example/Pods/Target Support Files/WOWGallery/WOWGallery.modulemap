@@ -1,6 +1,0 @@
-framework module WOWGallery {
-  umbrella header "WOWGallery-umbrella.h"
-
-  export *
-  module * { export * }
-}
