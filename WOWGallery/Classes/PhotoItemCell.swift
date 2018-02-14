@@ -24,7 +24,7 @@ class PhotoItemCell: UICollectionViewCell {
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    let bundle = Bundle(url: Bundle(for: PhotoItemCell.self).url(forResource: "WOWGallery", withExtension: "bundle")!)!
+    let bundle = Bundle(url: Bundle(for: PhotoItemCell.self).url(forResource: "Resources", withExtension: "bundle")!)!
     let image = UIImage(named: "SelectedIcon", in: bundle, compatibleWith: nil)
     selectedImageView.image = image
     selectedImageView.isHidden = true

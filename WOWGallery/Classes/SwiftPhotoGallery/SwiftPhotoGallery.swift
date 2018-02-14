@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Hero
 
 @objc public protocol SwiftPhotoGalleryDataSource {
   func numberOfImagesInGallery(gallery:SwiftPhotoGallery) -> Int
@@ -77,6 +78,8 @@ public class SwiftPhotoGallery: UIViewController {
             return Int(imageCollectionView.contentOffset.x / imageCollectionView.frame.size.width)
         }
     }
+  
+  public var selectedThumbnail: UIImage?
 
     public var hidePageControl: Bool = false {
         didSet {
@@ -435,7 +438,13 @@ extension SwiftPhotoGallery: UICollectionViewDataSource {
     public func collectionView(_ imageCollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: "SwiftPhotoGalleryCell", for: indexPath) as! SwiftPhotoGalleryCell
       
-      cell.image = nil
+      if indexPath.item == currentPage {
+        cell.imageView.heroID = "image-\(indexPath.item)"
+        cell.imageView.heroModifiers = [.zPosition(2)]
+        cell.image = selectedThumbnail
+      } else {
+        cell.image = nil
+      }
       getImage(currentPage: indexPath.row) { (image) in
         cell.image = image
       }

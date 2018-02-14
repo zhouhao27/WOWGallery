@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Hero
 
 // TODO:
 // 1. Custom Transition doesn't work well
 // 2. CocoaPods and Carthage
 // 3. Add test
+// 4. Better cache algorithm, for example, LRU
 
 public protocol PhotoGridViewControllerDataSource: class {
   func numberOfPhotos(in photoGridViewController: PhotoGridViewController) -> Int
@@ -82,6 +84,10 @@ open class PhotoGridViewController: UIViewController {
   open func reloadData() {
     self.collectionView.reloadData()
   }
+  
+  open func reladItem(at index: Int) {
+    self.collectionView.reloadItems(at: [IndexPath(item: index, section: 0)])
+  }
 
 }
 
@@ -110,6 +116,7 @@ extension PhotoGridViewController: UICollectionViewDataSource, UICollectionViewD
       gallery.pageIndicatorTintColor = UIColor.gray.withAlphaComponent(0.5)
       gallery.currentPageIndicatorTintColor = UIColor(red: 0.0, green: 0.66, blue: 0.875, alpha: 1.0)
       gallery.hidePageControl = false
+      gallery.selectedThumbnail = thumbnailCache.object(forKey: "\(indexPath.item)" as NSString)
       
       present(gallery, animated: true, completion: { () -> Void in
         gallery.currentPage = indexPath.row
@@ -125,15 +132,16 @@ extension PhotoGridViewController: UICollectionViewDataSource, UICollectionViewD
   
   @available(iOS 10.0, *)
   public func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
-    
+
     for indexPath in indexPaths{
       let imageKey = "\(indexPath.row)" as NSString
       if thumbnailCache.object(forKey: imageKey) == nil {
       
-        self.dataSource?.thumbnail(in: self, at: indexPath.row, complete: { (image) in
+        self.dataSource?.thumbnail(in: self, at: indexPath.row, complete: {
+          [weak self] (image) in
           if let image = image {
-            self.thumbnailCache.setObject(image, forKey: imageKey)
-            self.collectionView.reloadItems(at: [indexPath])
+            self?.thumbnailCache.setObject(image, forKey: imageKey)
+            self?.collectionView.reloadItems(at: [indexPath])
           }
         })
       }
@@ -151,18 +159,23 @@ extension PhotoGridViewController: UICollectionViewDataSource, UICollectionViewD
     cell.isSelected = selected.contains(indexPath.row)
     
     let imageKey = "\(indexPath.row)" as NSString
+    cell.imageView.heroID = "image-\(indexPath.item)"
+    cell.imageView.heroModifiers = [.zPosition(2)]
     if let image = thumbnailCache.object(forKey: imageKey) {
       cell.imageView.image = image
     } else {
-      cell.imageView.image = placeHolderImage
-      
-      self.dataSource?.thumbnail(in: self, at: indexPath.row, complete: { (image) in
+      cell.imageView.image = placeHolderImage      
+      self.dataSource?.thumbnail(in: self, at: indexPath.row, complete: {
+        [weak self] (image) in
         if let image = image {
-          self.thumbnailCache.setObject(image, forKey: imageKey)
-          DispatchQueue.main.async {
-            cell.imageView.image = image
+          // only show visible cell
+          if self?.collectionView.indexPath(for: cell)?.item == indexPath.item {
+            self?.thumbnailCache.setObject(image, forKey: imageKey)
+            DispatchQueue.main.async {
+              cell.imageView.image = image
+            }
           }
-        }        
+        }
       })
     }
     return cell

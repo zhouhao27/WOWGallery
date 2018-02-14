@@ -1,6 +1,6 @@
 {
   "name": "WOWGallery",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "PhotoGallery library.",
   "description": "Similar to iOS photo album. But you can select different data source.",
   "homepage": "https://github.com/zhouhao27/WOWGallery",
@@ -13,11 +13,16 @@
   },
   "source": {
     "git": "https://github.com/zhouhao27/WOWGallery.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "WOWGallery/Classes/**/*",
-  "resources": "WOWGallery/Assets/WOWGallery.bundle"
+  "resources": "WOWGallery/Assets/WOWGallery.bundle",
+  "dependencies": {
+    "Hero": [
+      "~> 0.3.6"
+    ]
+  }
 }

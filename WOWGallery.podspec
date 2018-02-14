@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WOWGallery'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'PhotoGallery library.'
 
   s.description      = <<-DESC
@@ -25,9 +25,6 @@ Similar to iOS photo album. But you can select different data source.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'WOWGallery/Classes/**/*'
-  s.resources    = 'WOWGallery/Assets/WOWGallery.bundle'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resources    = 'WOWGallery/Assets/Resources.bundle'
+  s.dependency 'Hero', '~> 0.3.6'
 end
