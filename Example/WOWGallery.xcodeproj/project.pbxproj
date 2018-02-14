@@ -13,6 +13,16 @@
 		3859EC29202C4346004DF233 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859EC24202C4346004DF233 /* MainViewController.swift */; };
 		3859EC2A202C4346004DF233 /* PhotoAlbumRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859EC25202C4346004DF233 /* PhotoAlbumRequester.swift */; };
 		3859EC2D202C4354004DF233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3859EC2B202C4354004DF233 /* LaunchScreen.storyboard */; };
+		386EFE422034073000D6C9B8 /* WOWGallery.h in Headers */ = {isa = PBXBuildFile; fileRef = 386EFE402034073000D6C9B8 /* WOWGallery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		386EFE452034073000D6C9B8 /* WOWGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386EFE3E2034073000D6C9B8 /* WOWGallery.framework */; };
+		386EFE462034073000D6C9B8 /* WOWGallery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 386EFE3E2034073000D6C9B8 /* WOWGallery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		386EFE53203408B900D6C9B8 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386EFE4B2034085800D6C9B8 /* PhotoGridViewController.swift */; };
+		386EFE54203408B900D6C9B8 /* PhotoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386EFE4C2034085800D6C9B8 /* PhotoItemCell.swift */; };
+		386EFE55203408B900D6C9B8 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386EFE4D2034085800D6C9B8 /* ReplaceMe.swift */; };
+		386EFE56203408B900D6C9B8 /* PanDirectionGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386EFE4F2034085800D6C9B8 /* PanDirectionGestureRecognizer.swift */; };
+		386EFE57203408B900D6C9B8 /* SwiftPhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386EFE502034085800D6C9B8 /* SwiftPhotoGallery.swift */; };
+		386EFE58203408B900D6C9B8 /* SwiftPhotoGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386EFE512034085800D6C9B8 /* SwiftPhotoGalleryCell.swift */; };
+		386EFE5E2034095500D6C9B8 /* WOWGallery.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 386EFE5D2034094100D6C9B8 /* WOWGallery.bundle */; };
 		3E33D7D1150B333C70ABE398 /* Pods_WOWGallery_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95EB344401BF12B59A2FB08 /* Pods_WOWGallery_Tests.framework */; };
 		40D498A44788B788FB6CC8CB /* Pods_WOWGallery_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A7981321F5C7542D7E60B6 /* Pods_WOWGallery_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -22,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		386EFE432034073000D6C9B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 386EFE3D2034073000D6C9B8;
+			remoteInfo = WOWGallery;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -30,6 +47,20 @@
 			remoteInfo = WOWGallery;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		386EFE4A2034073000D6C9B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				386EFE462034073000D6C9B8 /* WOWGallery.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		046F50E206DBD118C07118CB /* Pods-WOWGallery_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOWGallery_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WOWGallery_Tests/Pods-WOWGallery_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +74,17 @@
 		3859EC24202C4346004DF233 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3859EC25202C4346004DF233 /* PhotoAlbumRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumRequester.swift; sourceTree = "<group>"; };
 		3859EC2C202C4354004DF233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		386EFE3E2034073000D6C9B8 /* WOWGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WOWGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		386EFE402034073000D6C9B8 /* WOWGallery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WOWGallery.h; sourceTree = "<group>"; };
+		386EFE412034073000D6C9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386EFE4B2034085800D6C9B8 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoGridViewController.swift; path = ../../WOWGallery/Classes/PhotoGridViewController.swift; sourceTree = "<group>"; };
+		386EFE4C2034085800D6C9B8 /* PhotoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoItemCell.swift; path = ../../WOWGallery/Classes/PhotoItemCell.swift; sourceTree = "<group>"; };
+		386EFE4D2034085800D6C9B8 /* ReplaceMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ../../WOWGallery/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		386EFE4F2034085800D6C9B8 /* PanDirectionGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanDirectionGestureRecognizer.swift; sourceTree = "<group>"; };
+		386EFE502034085800D6C9B8 /* SwiftPhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPhotoGallery.swift; sourceTree = "<group>"; };
+		386EFE512034085800D6C9B8 /* SwiftPhotoGalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPhotoGalleryCell.swift; sourceTree = "<group>"; };
+		386EFE5C2034094100D6C9B8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		386EFE5D2034094100D6C9B8 /* WOWGallery.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WOWGallery.bundle; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* WOWGallery_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOWGallery_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,11 +100,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		386EFE3A2034073000D6C9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				40D498A44788B788FB6CC8CB /* Pods_WOWGallery_Example.framework in Frameworks */,
+				386EFE452034073000D6C9B8 /* WOWGallery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +147,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		386EFE3F2034073000D6C9B8 /* WOWGallery */ = {
+			isa = PBXGroup;
+			children = (
+				386EFE5B2034094100D6C9B8 /* Assets */,
+				386EFE59203408DC00D6C9B8 /* Source */,
+				386EFE402034073000D6C9B8 /* WOWGallery.h */,
+				386EFE412034073000D6C9B8 /* Info.plist */,
+			);
+			path = WOWGallery;
+			sourceTree = "<group>";
+		};
+		386EFE4E2034085800D6C9B8 /* SwiftPhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				386EFE4F2034085800D6C9B8 /* PanDirectionGestureRecognizer.swift */,
+				386EFE502034085800D6C9B8 /* SwiftPhotoGallery.swift */,
+				386EFE512034085800D6C9B8 /* SwiftPhotoGalleryCell.swift */,
+			);
+			name = SwiftPhotoGallery;
+			path = ../../WOWGallery/Classes/SwiftPhotoGallery;
+			sourceTree = "<group>";
+		};
+		386EFE59203408DC00D6C9B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				386EFE4B2034085800D6C9B8 /* PhotoGridViewController.swift */,
+				386EFE4C2034085800D6C9B8 /* PhotoItemCell.swift */,
+				386EFE4D2034085800D6C9B8 /* ReplaceMe.swift */,
+				386EFE4E2034085800D6C9B8 /* SwiftPhotoGallery */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		386EFE5B2034094100D6C9B8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				386EFE5C2034094100D6C9B8 /* .gitkeep */,
+				386EFE5D2034094100D6C9B8 /* WOWGallery.bundle */,
+			);
+			name = Assets;
+			path = ../../WOWGallery/Assets;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for WOWGallery */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				386EFE3F2034073000D6C9B8 /* WOWGallery */,
 				607FACD11AFB9204008FA782 /* Products */,
 				3168D041C14CFBA030FB0356 /* Pods */,
 				064293F0B8A6DA95E528D595 /* Frameworks */,
@@ -114,6 +208,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* WOWGallery_Example.app */,
 				607FACE51AFB9204008FA782 /* WOWGallery_Tests.xctest */,
+				386EFE3E2034073000D6C9B8 /* WOWGallery.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,7 +268,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		386EFE3B2034073000D6C9B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				386EFE422034073000D6C9B8 /* WOWGallery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		386EFE3D2034073000D6C9B8 /* WOWGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 386EFE472034073000D6C9B8 /* Build configuration list for PBXNativeTarget "WOWGallery" */;
+			buildPhases = (
+				386EFE392034073000D6C9B8 /* Sources */,
+				386EFE3A2034073000D6C9B8 /* Frameworks */,
+				386EFE3B2034073000D6C9B8 /* Headers */,
+				386EFE3C2034073000D6C9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WOWGallery;
+			productName = WOWGallery;
+			productReference = 386EFE3E2034073000D6C9B8 /* WOWGallery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		607FACCF1AFB9204008FA782 /* WOWGallery_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "WOWGallery_Example" */;
@@ -184,10 +308,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				BA148F1715D38FDB64CC1264 /* [CP] Embed Pods Frameworks */,
 				0549B7D0D3B410BC1B5AE141 /* [CP] Copy Pods Resources */,
+				386EFE4A2034073000D6C9B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				386EFE442034073000D6C9B8 /* PBXTargetDependency */,
 			);
 			name = WOWGallery_Example;
 			productName = WOWGallery;
@@ -225,6 +351,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					386EFE3D2034073000D6C9B8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -251,11 +381,20 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* WOWGallery_Example */,
 				607FACE41AFB9204008FA782 /* WOWGallery_Tests */,
+				386EFE3D2034073000D6C9B8 /* WOWGallery */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		386EFE3C2034073000D6C9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				386EFE5E2034095500D6C9B8 /* WOWGallery.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +508,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		386EFE392034073000D6C9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				386EFE53203408B900D6C9B8 /* PhotoGridViewController.swift in Sources */,
+				386EFE54203408B900D6C9B8 /* PhotoItemCell.swift in Sources */,
+				386EFE55203408B900D6C9B8 /* ReplaceMe.swift in Sources */,
+				386EFE56203408B900D6C9B8 /* PanDirectionGestureRecognizer.swift in Sources */,
+				386EFE57203408B900D6C9B8 /* SwiftPhotoGallery.swift in Sources */,
+				386EFE58203408B900D6C9B8 /* SwiftPhotoGalleryCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,6 +545,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		386EFE442034073000D6C9B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 386EFE3D2034073000D6C9B8 /* WOWGallery */;
+			targetProxy = 386EFE432034073000D6C9B8 /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* WOWGallery_Example */;
@@ -420,6 +577,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		386EFE482034073000D6C9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WOWGallery/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhouhao.WOWGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		386EFE492034073000D6C9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WOWGallery/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhouhao.WOWGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -525,11 +736,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D8B41DA7600015219E8C8C5 /* Pods-WOWGallery_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WOWGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhouhao.WOWGallery-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 3.0;
@@ -540,11 +752,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 916DAC76CEA2855ECC0C2167 /* Pods-WOWGallery_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WOWGallery/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhouhao.WOWGallery-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 3.0;
@@ -592,6 +805,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		386EFE472034073000D6C9B8 /* Build configuration list for PBXNativeTarget "WOWGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				386EFE482034073000D6C9B8 /* Debug */,
+				386EFE492034073000D6C9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "WOWGallery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
